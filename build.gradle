@@ -1,7 +1,7 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "8.1.1" apply false
     id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
+    id "dev.architectury.loom" version "1.9-SNAPSHOT" apply false
 }
 
 architectury {
@@ -67,10 +67,10 @@ project.ext.keys = new Properties()
 ext.ENV = System.getenv()
 ext.keysExists = ENV.MAVEN_PASS != null
 if (keysExists) {
-    project.ext.keys.kosmx_maven = ENV.MAVEN_PASS
+    project.ext.keys.ramzesbul_maven = ENV.MAVEN_PASS
     project.ext.keys.maven_user = ENV.MAVEN_USER
 } else {
-    project.ext.keys.kosmx_maven = "V2h5IGRpZCB5b3UgZGVjb2RlIGl0PyAg"
+    project.ext.keys.ramzesbul_maven = "V2h5IGRpZCB5b3UgZGVjb2RlIGl0PyAg"
     project.ext.keys.maven_user = "username"
 }
 
